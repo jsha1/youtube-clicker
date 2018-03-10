@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+
+  "name": "YT Clicker",
+  "description": "Control YT via the..",
+  "version": "1.4.1",
+
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["contentScript.js"]
+    }],
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "<all_urls>",
+    "https://www.youtube.com/*",
+     "tabs", "https://www.youtube.com/*"
+  ]
+}
